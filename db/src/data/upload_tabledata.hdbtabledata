@@ -1,0 +1,15 @@
+{
+    "format_version": 1,
+    "imports": [
+     {
+            "column_mappings" : { "signal_time" : "Date", "signal_value" : "DailyTemperature"},
+            "import_settings" : { "import_columns" : [ "signal_time", "signal_value"], "include_filter" : [], "exclude_filter" : []},
+            "source_data" : {
+                "data_type" : "CSV", "has_header" : true, "dialect" : "HANA", "type_config" : { "delimiter" : "\t", "do_quote": false },
+                "file_name" : "aa.forecast.db.data::ClimateTemperature.csv"
+            },
+            "target_table" : "aa.forecast.db.data::ClimateTemperature"  
+        }
+       
+    ]
+}
