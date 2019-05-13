@@ -9,6 +9,18 @@ modules:
    requires:
     - name: hdi_db
 
+
+ 
+
+
+ - name: js
+   type: nodejs
+   path: js
+   provides:
+    - name: js_api
+      properties:
+         url: ${default-url}
+
 resources:
  - name: hdi_db
    parameters:

@@ -1,0 +1,12 @@
+service {
+  "aa.forecast.db.data::ClimateTemperature"                 as "apl_ClimateTemperature";
+  "aa.forecast.db.data::Agriculture" as "apl_Agriculture";
+
+
+  "aa.forecast.db.hdb.pal.views::ClimateTemperature"              as "pal_ClimateTemperature"              key ("signal_time");
+  "aa.forecast.db.hdb.pal.views::Agriculture"                  as "pal_Agriculture"                  key ("signal_time");
+  
+}
+settings {
+  support null;
+}
