@@ -1,7 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"forecast/html/model/models"
+	"forecast/html/model/models",
+	"sap/ui/core/routing/History",
+	"sap/m/routing/RouteMatchedHandler"
 ], function (UIComponent, Device, models) {
 	"use strict";
 
@@ -17,15 +19,19 @@ sap.ui.define([
 		 * @override
 		 */
 		init: function () {
+			
+		  jQuery.sap.require("sap.ui.core.routing.History");
+    	  jQuery.sap.require("sap.m.routing.RouteMatchedHandler");
+
+			
 			// call the base component's init function
 			UIComponent.prototype.init.apply(this, arguments);
 
 			// enable routing
+			this._router = this.getRouter();
+			this._routeHandler = new sap.m.routing.RouteMatchedHandler(this._Router);
 			
-			
-			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			
-			this.getRouter().initialize();
+			this._router.initialize();
 
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");

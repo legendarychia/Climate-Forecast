@@ -115,8 +115,10 @@
 			}],
 			"targets": {
 				"demo": {
+					
 					"clearAggregation": true,
 					"viewName": "demo",
+					"transition":"slide",
 					"viewLevel": 1
 				}
 			}
