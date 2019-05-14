@@ -7,10 +7,6 @@ modules:
     path: db
     requires:
       - name: hdi_db
-        properties:
-          name: forecast_api
-          url: '~{url}'
-          timeout: 3000000
   - name: js
     type: nodejs
     path: js
