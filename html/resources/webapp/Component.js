@@ -18,10 +18,13 @@ sap.ui.define([
 		 * @public
 		 * @override
 		 */
+		 getRouter: function() {
+			return sap.ui.core.UIComponent.getRouterFor(this);
+		},
+		
 		init: function () {
 		
 
-			
 			// call the base component's init function
 			UIComponent.prototype.init.apply(this, arguments);
 
