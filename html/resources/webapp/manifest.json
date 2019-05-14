@@ -10,8 +10,8 @@
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
 		"sourceTemplate": {
-			"id": "hanatemplates.basicSAPUI5ApplicationProject",
-			"version": "0.0.0"
+			  "id": "hanatemplates.basicSAPUI5ApplicationProject",
+			  "version": "0.0.0"
 		},
 		"dataSources": {
 		  "data.xsodata": {

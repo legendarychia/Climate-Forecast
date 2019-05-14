@@ -7,7 +7,7 @@ sap.ui.define([
 	"forecast/html/model/formatter"
 ], function(Controller, History, Filter, FilterOperator, MessageBox, formatter) {
 	"use strict";
-	return Controller.extend("forecast.html.base.controller", {
+	return Controller.extend("forecast.html.base.Controller", {
 		formatter: formatter,
 		getRouter: function() {
 			return sap.ui.core.UIComponent.getRouterFor(this);
