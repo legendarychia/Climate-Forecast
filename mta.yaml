@@ -20,7 +20,7 @@ modules:
     type: html5
     path: html
     requires:
-      - name: hdi_db
+      - name: js_api
         group: destinations
         properties:
           name: forecast_api
