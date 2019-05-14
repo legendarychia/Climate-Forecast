@@ -19,19 +19,15 @@ sap.ui.define([
 		 * @override
 		 */
 		init: function () {
-			
-		  jQuery.sap.require("sap.ui.core.routing.History");
-    	  jQuery.sap.require("sap.m.routing.RouteMatchedHandler");
+		
 
 			
 			// call the base component's init function
 			UIComponent.prototype.init.apply(this, arguments);
 
 			// enable routing
-			this._router = this.getRouter();
-			this._routeHandler = new sap.m.routing.RouteMatchedHandler(this._Router);
-			
-			this._router.initialize();
+	
+			this.getRouter().initialize();
 
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");

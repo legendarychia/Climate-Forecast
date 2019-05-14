@@ -14,7 +14,7 @@
 					<Text text="{path : 'odata>signal_value', formatter: '.formatter.formatNumber'}"/>
 				</ui:template>
 			</ui:table.Column>
-			<ui:table.Column width="10%" visible="{= !!${default>/selected/dataset/hasExtraPredictors} }">
+			<ui:table.Column width="10%">
 				<Label text="Extra Predictors"/>
 				<ui:template>
 					<Button icon="sap-icon://search" press="onPressPopover" custom:id="{odata>signal_time}"/>
