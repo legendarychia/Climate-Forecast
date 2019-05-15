@@ -26,6 +26,9 @@ modules:
           name: forecast_api
           url: '~{url}'
           timeout: 3000000
+
+  
+
 resources:
   - name: hdi_db
     parameters:
